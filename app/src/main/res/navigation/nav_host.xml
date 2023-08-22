@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/loginfragment2">
+
+    <fragment
+        android:id="@+id/loginfragment2"
+        android:name="com.example.e_hatch.Auth.loginfragment"
+        android:label="fragment_loginfragment"
+        tools:layout="@layout/fragment_loginfragment" >
+        <action
+            android:id="@+id/action_loginfragment2_to_registerFragment2"
+            app:destination="@id/registerFragment2" />
+        <action
+            android:id="@+id/action_loginfragment2_to_homefragment2"
+            app:destination="@id/homefragment2" />
+        <action
+            android:id="@+id/action_loginfragment2_to_forgetpass"
+            app:destination="@id/forgetpass" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.example.e_hatch.Auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/homefragment2"
+        android:name="com.example.e_hatch.Homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" />
+    <fragment
+        android:id="@+id/forgetpass"
+        android:name="com.example.e_hatch.Auth.forgetpass"
+        android:label="fragment_forgetpass"
+        tools:layout="@layout/fragment_forgetpass" />
+</navigation>
