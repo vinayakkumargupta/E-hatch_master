@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.e_hatch"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.e_hatch"

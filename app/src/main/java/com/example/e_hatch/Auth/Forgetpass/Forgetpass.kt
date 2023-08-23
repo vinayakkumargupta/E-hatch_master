@@ -1,4 +1,4 @@
-package com.example.e_hatch.Auth
+package com.example.e_hatch.Auth.Forgetpass
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,26 +7,24 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.e_hatch.R
 import com.example.e_hatch.databinding.FragmentForgetpassBinding
-import com.example.e_hatch.databinding.FragmentLoginfragmentBinding
 
+class forgetpass : Fragment() {
 
-class loginfragment : Fragment() {
-    lateinit var binding: FragmentLoginfragmentBinding
+    lateinit var binding: FragmentForgetpassBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        binding = FragmentLoginfragmentBinding.inflate(inflater, container, false)
+        binding = FragmentForgetpassBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 
 }

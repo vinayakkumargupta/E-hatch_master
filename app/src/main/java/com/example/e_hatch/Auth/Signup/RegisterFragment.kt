@@ -1,4 +1,4 @@
-package com.example.e_hatch.Auth
+package com.example.e_hatch.Auth.Signup
 
 import android.os.Bundle
 import android.view.LayoutInflater

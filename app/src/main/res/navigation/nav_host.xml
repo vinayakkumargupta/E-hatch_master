@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginfragment2"
-        android:name="com.example.e_hatch.Auth.loginfragment"
+        android:name="com.example.e_hatch.Auth.Signin.loginfragment"
         android:label="fragment_loginfragment"
         tools:layout="@layout/fragment_loginfragment" >
         <action
@@ -22,17 +22,17 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment2"
-        android:name="com.example.e_hatch.Auth.RegisterFragment"
+        android:name="com.example.e_hatch.Auth.Signup.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/homefragment2"
-        android:name="com.example.e_hatch.Homefragment"
+        android:name="com.example.e_hatch.Home.Homefragment"
         android:label="fragment_homefragment"
         tools:layout="@layout/fragment_homefragment" />
     <fragment
         android:id="@+id/forgetpass"
-        android:name="com.example.e_hatch.Auth.forgetpass"
+        android:name="com.example.e_hatch.Auth.Forgetpass.forgetpass"
         android:label="fragment_forgetpass"
         tools:layout="@layout/fragment_forgetpass" />
 </navigation>
