@@ -24,7 +24,11 @@
         android:id="@+id/registerFragment2"
         android:name="com.example.e_hatch.Auth.Signup.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment2_to_setpassword"
+            app:destination="@id/setpassword" />
+    </fragment>
     <fragment
         android:id="@+id/homefragment2"
         android:name="com.example.e_hatch.Home.Homefragment"
@@ -35,4 +39,9 @@
         android:name="com.example.e_hatch.Auth.Forgetpass.forgetpass"
         android:label="fragment_forgetpass"
         tools:layout="@layout/fragment_forgetpass" />
+    <fragment
+        android:id="@+id/setpassword"
+        android:name="com.example.e_hatch.Auth.PasswordSetup.Setpassword"
+        android:label="fragment_setpassword"
+        tools:layout="@layout/fragment_setpassword" />
 </navigation>

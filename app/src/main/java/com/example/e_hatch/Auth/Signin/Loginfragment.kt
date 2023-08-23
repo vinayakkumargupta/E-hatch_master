@@ -12,6 +12,7 @@ import com.example.e_hatch.databinding.FragmentLoginfragmentBinding
 
 class loginfragment : Fragment() {
     lateinit var binding: FragmentLoginfragmentBinding
+    private var _binding: FragmentLoginfragmentBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,11 @@ class loginfragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentLoginfragmentBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 
